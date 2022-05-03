@@ -22,5 +22,37 @@ namespace SoloProjectSimonSays
         {
             InitializeComponent();
         }
+
+        private void QuitButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
+            Application.Current.Shutdown();
+        }
+
+        private void QuitTextClick(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
+            Application.Current.Shutdown();
+        }
+
+        private void RulesButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page2());
+        }
+
+        private void RulesTextClick(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page2());
+        }
+
+        private void PlayButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page3());
+        }
+
+        private void PlayTextClick(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page3());
+        }
     }
 }

@@ -1,0 +1,25 @@
+﻿<Page x:Class="SoloProjectSimonSays.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SoloProjectSimonSays"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid Background="Black">
+        <Viewbox>
+            <Canvas Height="161" Width="293">
+                <TextBlock Height="180" TextWrapping="Wrap" Width="195" Foreground="#FF8EE060" TextAlignment="Center" Canvas.Left="49" FontSize="7.6"><Run Text="If you've never played Simon Say's, the rules are simple. This is a memory skill game involving sound and colors."/><LineBreak/><Run/><LineBreak/><Run Text="When you click &quot;Start Game!&quot; a unique tone will play and a color square will light up."/><LineBreak/><Run/><LineBreak/><Run Text="You must click the square that lit up. Each round an additional square will light up, and at the end of the sequence you must repeat it with subsequent clicks from memory."/><LineBreak/><Run/><LineBreak/><Run Text="If you fail your score will be displayed and you can try again or return to the main menu to quit the application."/><LineBreak/><Run/><LineBreak/><Run Text="I hope you enjoy my game! - Max "/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                <Rectangle Fill="White" Height="44" Canvas.Top="117" Width="47" MouseLeftButtonUp="MainMenuButtonClick">
+                    <Rectangle.Effect>
+                        <DropShadowEffect/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <TextBlock Height="34" Canvas.Left="6.5" Canvas.Top="120.447" TextWrapping="Wrap" Width="34" FontSize="8" TextAlignment="Center" MouseLeftButtonUp="MainMenuTextClick"><Run Text="Return to Main Menu"/><LineBreak/><Run/></TextBlock>
+            </Canvas>
+        </Viewbox>
+
+    </Grid>
+</Page>
